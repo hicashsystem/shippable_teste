@@ -1,6 +1,6 @@
 resources:
   # This time resource posts new versions for it, every 2 minutes
-  - name: nightly-trigger
-    type: time
-    seed:
-      interval: "*/2 * * * *"
+#  - name: nightly-trigger
+#    type: time
+#    seed:
+#      interval: "*/2 * * * *"
