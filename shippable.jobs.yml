@@ -1,7 +1,11 @@
 jobs:
-  - name: nightly-builds
-    type: runSh
+#backup-postgres-dropbox-checker_master_rSync
+#backup-postgres-dropbox-checker_master
+  - name: shippable_teste_runCI
+    type: runCI
     steps:
       - IN: nightly-trigger
-      - TASK:
-        - script: ./check.sh
+    on_success:                          
+      - script: echo 'on success !!!!!'  
+    on_failure:                          
+      - script: echo 'Failed job .... :('
