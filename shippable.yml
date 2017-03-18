@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - 2.7
+
+#before_install:
+#  - pip install XYZ
+
+install:
+  - pip install dropbox
+
+before_script: 
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+
+script:
+  - python script.py
+

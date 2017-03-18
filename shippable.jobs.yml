@@ -1,0 +1,7 @@
+jobs:
+  - name: nightly-builds
+    type: runSh
+    steps:
+      - IN: nightly-trigger
+      - TASK:
+        - script: ./check.sh
